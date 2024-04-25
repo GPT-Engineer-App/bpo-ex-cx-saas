@@ -7,7 +7,6 @@ const HumanResources = () => {
       <Text fontSize="xl" fontWeight="bold">
         Human Resources Module
       </Text>
-      {}
     </Box>
   );
 };

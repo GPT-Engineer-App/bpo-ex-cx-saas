@@ -7,7 +7,6 @@ const Finance = () => {
       <Text fontSize="xl" fontWeight="bold">
         Finance and Accounting Module
       </Text>
-      {}
     </Box>
   );
 };
