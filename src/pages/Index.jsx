@@ -31,6 +31,9 @@ const Index = () => {
               <Button leftIcon={<FaRobot />} colorScheme="purple" variant="ghost" mt={4} onClick={() => navigate("/features")}>
                 AI Functions
               </Button>
+              <Button leftIcon={<FaUserCircle />} colorScheme="teal" variant="solid" mt={4} onClick={() => navigate("/ai-employees")}>
+                AI Employees
+              </Button>
             </Flex>
           </VStack>
         </Grid>
