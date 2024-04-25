@@ -1,7 +1,12 @@
-import React from 'react';
+import React from "react";
 
 function FinanceModule() {
-  return <div>Welcome to the Finance Module</div>;
+  return (
+    <div>
+      <h1>Welcome to the Finance Module</h1>
+      <p>This module handles all financial operations, including budgeting, financial reporting, and tax compliance.</p>
+    </div>
+  );
 }
 
 export default FinanceModule;

@@ -1,4 +1,6 @@
-import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
+import { Route, BrowserRouter as Router, Routes, Link } from "react-router-dom";
+import { Box, Flex, Spacer, Button } from "@chakra-ui/react";
+import { FaHome, FaTools, FaRobot, FaChartLine, FaWallet, FaUsers, FaBullhorn } from "react-icons/fa";
 import Index from "./pages/Index.jsx";
 import Features from "./pages/Features.jsx";
 import AIEmployees from "./pages/AIEmployees.jsx";
@@ -10,8 +12,33 @@ import SalesMarketingModule from "./modules/SalesMarketingModule.jsx";
 function App() {
   return (
     <Router>
+      <Box as="nav" p={4} bg="gray.200" w="full">
+        <Flex justify="space-between" align="center">
+          <Button as={Link} to="/" leftIcon={<FaHome />}>
+            Home
+          </Button>
+          <Button as={Link} to="/features" leftIcon={<FaTools />}>
+            Features
+          </Button>
+          <Button as={Link} to="/ai-employees" leftIcon={<FaRobot />}>
+            AI Employees
+          </Button>
+          <Button as={Link} to="/dashboard" leftIcon={<FaChartLine />}>
+            Dashboard
+          </Button>
+          <Button as={Link} to="/finance-module" leftIcon={<FaWallet />}>
+            Finance
+          </Button>
+          <Button as={Link} to="/human-resources-module" leftIcon={<FaUsers />}>
+            Human Resources
+          </Button>
+          <Button as={Link} to="/sales-marketing-module" leftIcon={<FaBullhorn />}>
+            Sales & Marketing
+          </Button>
+        </Flex>
+      </Box>
       <Routes>
-        <Route exact path="/" element={<Index />} />
+        <Route path="/" element={<Index />} />
         <Route path="/features" element={<Features />} />
         <Route path="/ai-employees" element={<AIEmployees />} />
         <Route path="/dashboard" element={<Dashboard />} />

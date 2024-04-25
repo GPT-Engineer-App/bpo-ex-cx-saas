@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { ChakraProvider, Box, VStack, Grid, theme, Text, Button, Heading, Flex, Spacer, IconButton, useColorMode, useColorModeValue, Image } from "@chakra-ui/react";
 import { FaSun, FaMoon, FaUserCircle, FaTachometerAlt, FaRobot } from "react-icons/fa";
 
@@ -28,11 +29,23 @@ const Index = () => {
               <Button leftIcon={<FaUserCircle />} colorScheme="green" variant="outline" mt={4}>
                 Employee Management
               </Button>
-              <Button leftIcon={<FaRobot />} colorScheme="purple" variant="ghost" mt={4} onClick={() => navigate("/features")}>
+              <Button leftIcon={<FaRobot />} colorScheme="purple" variant="ghost" mt={4} as={Link} to="/features">
                 AI Functions
               </Button>
-              <Button leftIcon={<FaUserCircle />} colorScheme="teal" variant="solid" mt={4} onClick={() => navigate("/ai-employees")}>
+              <Button leftIcon={<FaUserCircle />} colorScheme="teal" variant="solid" mt={4} as={Link} to="/ai-employees">
                 AI Employees
+              </Button>
+              <Button leftIcon={<FaTachometerAlt />} colorScheme="blue" variant="solid" mt={4} as={Link} to="/dashboard">
+                Dashboard
+              </Button>
+              <Button leftIcon={<FaUserCircle />} colorScheme="green" variant="outline" mt={4} as={Link} to="/human-resources-module">
+                Human Resources
+              </Button>
+              <Button leftIcon={<FaUserCircle />} colorScheme="purple" variant="ghost" mt={4} as={Link} to="/finance-module">
+                Finance
+              </Button>
+              <Button leftIcon={<FaUserCircle />} colorScheme="pink" variant="solid" mt={4} as={Link} to="/sales-marketing-module">
+                Sales & Marketing
               </Button>
             </Flex>
           </VStack>
