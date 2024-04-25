@@ -8,6 +8,10 @@ import Dashboard from "./pages/Dashboard.jsx";
 import FinanceModule from "./modules/FinanceModule.jsx";
 import HumanResourcesModule from "./modules/HumanResourcesModule.jsx";
 import SalesMarketingModule from "./modules/SalesMarketingModule.jsx";
+import Finance from "./components/DepartmentViews/Finance.jsx";
+import HumanResources from "./components/DepartmentViews/HumanResources.jsx";
+import Role1Dashboard from "./components/EmployeeViews/Role1Dashboard.jsx";
+import Role2Dashboard from "./components/EmployeeViews/Role2Dashboard.jsx";
 
 function App() {
   return (
@@ -45,6 +49,10 @@ function App() {
         <Route path="/finance-module" element={<FinanceModule />} />
         <Route path="/human-resources-module" element={<HumanResourcesModule />} />
         <Route path="/sales-marketing-module" element={<SalesMarketingModule />} />
+        <Route path="/department/finance" element={<Finance />} />
+        <Route path="/department/human-resources" element={<HumanResources />} />
+        <Route path="/role/role1" element={<Role1Dashboard />} />
+        <Route path="/role/role2" element={<Role2Dashboard />} />
       </Routes>
     </Router>
   );
