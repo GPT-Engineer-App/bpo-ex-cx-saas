@@ -3,7 +3,9 @@ import Index from "./pages/Index.jsx";
 import Features from "./pages/Features.jsx";
 import AIEmployees from "./pages/AIEmployees.jsx";
 import Dashboard from "./pages/Dashboard.jsx";
-
+import FinanceModule from "./modules/FinanceModule.jsx";
+import HumanResourcesModule from "./modules/HumanResourcesModule.jsx";
+import SalesMarketingModule from "./modules/SalesMarketingModule.jsx";
 
 function App() {
   return (
@@ -13,8 +15,9 @@ function App() {
         <Route path="/features" element={<Features />} />
         <Route path="/ai-employees" element={<AIEmployees />} />
         <Route path="/dashboard" element={<Dashboard />} />
-        <Route path="/departments/finance" element={<Finance />} />
-        <Route path="/departments/human-resources" element={<HumanResources />} />
+        <Route path="/finance-module" element={<FinanceModule />} />
+        <Route path="/human-resources-module" element={<HumanResourcesModule />} />
+        <Route path="/sales-marketing-module" element={<SalesMarketingModule />} />
       </Routes>
     </Router>
   );
