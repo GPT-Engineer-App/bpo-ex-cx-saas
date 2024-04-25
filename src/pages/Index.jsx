@@ -28,7 +28,7 @@ const Index = () => {
               <Button leftIcon={<FaUserCircle />} colorScheme="green" variant="outline" mt={4}>
                 Employee Management
               </Button>
-              <Button leftIcon={<FaRobot />} colorScheme="purple" variant="ghost" mt={4}>
+              <Button leftIcon={<FaRobot />} colorScheme="purple" variant="ghost" mt={4} onClick={() => navigate("/features")}>
                 AI Functions
               </Button>
             </Flex>
