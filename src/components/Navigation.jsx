@@ -25,6 +25,12 @@ const Navigation = () => {
         <Button as={Link} to="/sales-marketing-module" colorScheme="teal" mr="4">
           Sales & Marketing
         </Button>
+        <Button as={Link} to="/speech-recognition" colorScheme="teal" mr="4">
+          Speech Recognition
+        </Button>
+        <Button as={Link} to="/sentiment-analysis" colorScheme="teal" mr="4">
+          Sentiment Analysis
+        </Button>
       </Box>
     </Flex>
   );
